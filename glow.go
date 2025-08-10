@@ -10,7 +10,7 @@ import (
 
 	"github.com/chrislusf/glow/netchan"
 
-	kingpin "gopkg.in/alecthomas/kingpin.v2"
+	kingpin "github.com/alecthomas/kingpin/v2"
 
 	a "github.com/chrislusf/glow/agent"
 	r "github.com/chrislusf/glow/netchan/receiver"

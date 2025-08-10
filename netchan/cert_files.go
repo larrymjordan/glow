@@ -4,8 +4,8 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"path/filepath"
 
 	"github.com/chrislusf/glow/util"
@@ -46,7 +46,7 @@ func (c *CertFiles) MakeTLSConfig() *tls.Config {
 	}
 
 	// Load CA cert
-	caCert, err := ioutil.ReadFile(caFile)
+	caCert, err := os.ReadFile(caFile)
 	if err != nil {
 		log.Fatal(err)
 	}
